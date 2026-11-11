@@ -1,0 +1,14 @@
+{
+  "name": "broad",
+  "categories": 8,
+  "sellers": 24,
+  "arrival_rate": 14,
+  "availability": 0.6,
+  "take_rate": 0.15,
+  "payment_rate": 0.025,
+  "support_cost": 4.0,
+  "buyer_acquisition_cost": 6.0,
+  "days": 28,
+  "patience": 3,
+  "policy": "optimal"
+}

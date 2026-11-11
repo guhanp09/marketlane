@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marketlane"
+version = "0.1.0"
+description = "Reproducible product decision workbench"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.3.5", "scipy==1.18.1", "pandas==2.3.3", "matplotlib==3.11.2", "plotly==6.9.0"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0", "ruff==0.17.4"]
+
+[tool.setuptools.packages.find]
+include = ["marketlane*"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

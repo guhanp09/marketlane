@@ -1,0 +1,43 @@
+{
+  "validation_date": "2026-11-11",
+  "python": "3.12.7",
+  "checks": [
+    {
+      "command": "python -m ruff check marketlane tests",
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "output": "...........                                                              [100%]\n11 passed in 0.29s\n"
+    },
+    {
+      "command": "python -m marketlane demo",
+      "exit_code": 0,
+      "output": "{\n  \"comparison_runs\": 160,\n  \"sensitivity_runs\": 108,\n  \"summary\": {\n    \"broad\": {\n      \"fill_rate\": 0.7513335680912582,\n      \"contribution\": 1868.9205941920372,\n      \"supplier_earnings_gini\": 0.2166443928250938\n    },\n    \"focused\": {\n      \"fill_rate\": 0.9026045255784079,\n      \"contribution\": 2524.9660804584732,\n      \"supplier_earnings_gini\": 0.13441161862372777\n    },\n    \"focused_greedy\": {\n      \"fill_rate\": 0.9367875619718191,\n      \"contribution\": 2615.689134002071,\n      \"supplier_earnings_gini\": 0.1370405514224557\n    },\n    \"focused_higher_fee\": {\n      \"fill_rate\": 0.8302675218241603,\n      \"contribution\": 7023.525826682255,\n      \"supplier_earnings_gini\": 0.17222163127147258\n    }\n  }\n}\n"
+    }
+  ],
+  "artifact_sha256": {
+    "reports/broad/daily.csv": "09734f07891f3e7fa2721f109f54980b598821a02394224372660dc2b3c20e31",
+    "reports/broad/match_ledger.csv": "c9075fe4ddcf64ee271adb1df45cc9ee0d020c0d353556fbba40b1178ef3c5f4",
+    "reports/broad/parameters.json": "40e556496f41f0630d6c91b3a9ef627e87cade5a005b6769d813dbeac3a15890",
+    "reports/comparison.png": "29b3bda097837eb709dd650cda7106bfb6d8f762f8983e7539b5d330a23c090a",
+    "reports/decision.md": "aeb17a132e7a8c7178e1d347980803dde99a11ba0ac9a9c1edff7d1ae506735f",
+    "reports/focused/daily.csv": "8bd591cb35948fe7aa9e290e93102b12b4311893c065ff087a0c0cd2ecc47962",
+    "reports/focused/match_ledger.csv": "92b01006c8ee39e35719b365fc4b1f377517d41ce45fb1063dd1cf364d58058e",
+    "reports/focused/parameters.json": "5772979ce93cd5bdc4799c1b80ece10f9529e400adfefb7a5175d684944acea0",
+    "reports/focused_greedy/daily.csv": "559a1009ae475e1f560cf10502205412234535f2cf28420c56190ff7f28df4f3",
+    "reports/focused_greedy/match_ledger.csv": "daafd4f98c65aeac7e3bd7a0d2a8e19055e0651e764f00b9399c1db03a7a0071",
+    "reports/focused_greedy/parameters.json": "17bc14ae066273bf65df963f5cc2da4596b8f7f017f020e8f52525cb2f35c83e",
+    "reports/focused_higher_fee/daily.csv": "29cf351d5251917160a8880042127263a816524e14e479f08867f632623c90e4",
+    "reports/focused_higher_fee/match_ledger.csv": "a3c0cee7b98e83d4c774740b8e0fa649ce6febacc25327792884157a53427c7d",
+    "reports/focused_higher_fee/parameters.json": "7221c162a978d09069b733253e571cc9460f480f40f8f3bd2adc531f1780ed97",
+    "reports/metrics.json": "bcbf1b4b18a49d2f7285bc566f636373a86c0ddcf82d7173c91a2b5973930784",
+    "reports/scenario_summary.csv": "0a0195615f13ceffd63fbc12d2e97dda2fa059e0ee34975ec1df06bb2ecf127f",
+    "reports/sensitivity.csv": "4c598497ded5887d6db2773ce66da8639c15c9c3effefb868d6dc8317ab986f4",
+    "reports/simulation_runs.csv": "b467a82fa3c1115727a53cd738fe32e19b899323066a9767cf41ff6fe37ba30b",
+    "reports/tradeoff.html": "db145897070147a46c3ab63c45441b98fa8b47d0540a2db7293121c5e2c4f748"
+  },
+  "scope": "Local execution. Hosted CI is recorded separately; future user studies are not completed."
+}

@@ -1,0 +1,134 @@
+{
+  "data_type": "synthetic model",
+  "comparison_runs": 160,
+  "paired_seeds": 40,
+  "sensitivity_runs": 108,
+  "summary": {
+    "broad": {
+      "arrivals": 389.1,
+      "matches": 292.2,
+      "expired": 96.9,
+      "fill_rate": 0.7513335680912582,
+      "median_wait_days": 0.0,
+      "p90_wait_days": 1.025,
+      "gmv": 42978.564753536295,
+      "platform_fee": 6446.784713030445,
+      "supplier_payout": 36531.78004050585,
+      "payment_cost": 1074.4641188384076,
+      "support_cost": 1168.8,
+      "acquisition_cost": 2334.6,
+      "contribution": 1868.9205941920372,
+      "supplier_utilization": 0.6575794060750438,
+      "supplier_earnings_gini": 0.2166443928250938,
+      "active_suppliers": 23.825
+    },
+    "focused": {
+      "arrivals": 389.1,
+      "matches": 350.925,
+      "expired": 38.175,
+      "fill_rate": 0.9026045255784079,
+      "median_wait_days": 0.0,
+      "p90_wait_days": 0.7325000000000003,
+      "gmv": 50106.12864366779,
+      "platform_fee": 7515.919296550169,
+      "supplier_payout": 42590.20934711762,
+      "payment_cost": 1252.6532160916947,
+      "support_cost": 1403.7,
+      "acquisition_cost": 2334.6,
+      "contribution": 2524.9660804584732,
+      "supplier_utilization": 0.7897849601157787,
+      "supplier_earnings_gini": 0.13441161862372777,
+      "active_suppliers": 24.0
+    },
+    "focused_greedy": {
+      "arrivals": 389.1,
+      "matches": 364.3,
+      "expired": 24.8,
+      "fill_rate": 0.9367875619718191,
+      "median_wait_days": 0.85,
+      "p90_wait_days": 1.9,
+      "gmv": 51259.91307201657,
+      "platform_fee": 7688.986960802485,
+      "supplier_payout": 43570.92611121408,
+      "payment_cost": 1281.4978268004143,
+      "support_cost": 1457.2,
+      "acquisition_cost": 2334.6,
+      "contribution": 2615.689134002071,
+      "supplier_utilization": 0.8200899019221163,
+      "supplier_earnings_gini": 0.1370405514224557,
+      "active_suppliers": 24.0
+    },
+    "focused_higher_fee": {
+      "arrivals": 389.1,
+      "matches": 322.85,
+      "expired": 66.25,
+      "fill_rate": 0.8302675218241603,
+      "median_wait_days": 0.0,
+      "p90_wait_days": 0.7550000000000011,
+      "gmv": 47331.22589636558,
+      "platform_fee": 11832.806474091394,
+      "supplier_payout": 35498.419422274186,
+      "payment_cost": 1183.2806474091396,
+      "support_cost": 1291.4,
+      "acquisition_cost": 2334.6,
+      "contribution": 7023.525826682255,
+      "supplier_utilization": 0.7265628552055277,
+      "supplier_earnings_gini": 0.17222163127147258,
+      "active_suppliers": 23.95
+    }
+  },
+  "paired_mean_intervals": {
+    "broad_minus_focused": {
+      "fill_rate": {
+        "mean": -0.15127095748714958,
+        "low": -0.16324026526599494,
+        "high": -0.13973697224427178
+      },
+      "contribution": {
+        "mean": -656.0454862664359,
+        "low": -721.2115737514009,
+        "high": -592.2279236897508
+      },
+      "supplier_earnings_gini": {
+        "mean": 0.08223277420136602,
+        "low": 0.07294304663931592,
+        "high": 0.09140223457238061
+      }
+    },
+    "focused_higher_fee_minus_focused": {
+      "fill_rate": {
+        "mean": -0.0723370037542475,
+        "low": -0.07810645197841334,
+        "high": -0.06659503457734875
+      },
+      "contribution": {
+        "mean": 4498.559746223783,
+        "low": 4407.340064062118,
+        "high": 4595.057270677743
+      },
+      "supplier_earnings_gini": {
+        "mean": 0.03781001264774483,
+        "low": 0.03286815539205625,
+        "high": 0.042714540255820485
+      }
+    },
+    "focused_greedy_minus_focused": {
+      "fill_rate": {
+        "mean": 0.03418303639341137,
+        "low": 0.029917514835282856,
+        "high": 0.03836947832628934
+      },
+      "contribution": {
+        "mean": 90.7230535435975,
+        "low": 76.86588895958418,
+        "high": 104.55193208283241
+      },
+      "supplier_earnings_gini": {
+        "mean": 0.0026289327987279454,
+        "low": -0.0010335566469110067,
+        "high": 0.006626372704428522
+      }
+    }
+  },
+  "decision": "VALIDATE_ASSUMPTIONS_BEFORE_LAUNCH"
+}

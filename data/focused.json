@@ -1,0 +1,11 @@
+{
+  "name": "focused_oldest_first",
+  "categories": 2,
+  "sellers": 24,
+  "arrival_rate": 14,
+  "availability": 0.6,
+  "take_rate": 0.15,
+  "days": 28,
+  "patience": 3,
+  "policy": "greedy"
+}
